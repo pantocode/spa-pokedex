@@ -40,7 +40,7 @@ const poke = window.pokeSearch.addEventListener('change', async () => {
 function renderPokemon(pokemon){
     pokeImg.setAttribute('src', pokemon.sprites.front_default);
     pokeName.textContent = pokemon.name;
-    pokeId.textContent = pokemon.id;
+    pokeId.textContent = `# ${pokemon.id}`;
     const types = pokemon.types;
     setCardColor(types);
 }
