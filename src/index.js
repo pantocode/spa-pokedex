@@ -9,7 +9,7 @@ const pokeCard = document.getElementById('pokecard');
 const typesColors = {
     bug: "#3d9950",
     dark: "#5a5b79",
-    fire: "##c72d3b",
+    fire: "#c72d3b",
     dragon: "#60ccd8",
     electric: "#e8e12e",
     fairy: "#eb1469",

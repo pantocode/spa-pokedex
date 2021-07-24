@@ -63,6 +63,8 @@ main{
     border:none;
     outline: none;
     margin-left: 10px;
+    width: 90%;
+    height: 20px;
 }
 
 ::placeholder {
