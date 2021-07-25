@@ -29,7 +29,7 @@ const typesColors = {
 }
 
 const poke = window.pokeSearch.addEventListener('change', async () => {
-    const id = window.pokeSearch.value;
+    const id = window.pokeSearch.value.toLowerCase();
     pokemon = await fetchPokemon(id);
     renderPokemon(pokemon);
     window.pokeSearch.value="";
