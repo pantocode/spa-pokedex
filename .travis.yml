@@ -18,4 +18,4 @@ deploy:
   target-branch: gh-pages
   commit_message: "Deploy Realease"
   on:
-  branch: main
+    branch: main
