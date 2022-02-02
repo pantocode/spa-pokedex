@@ -32,14 +32,14 @@ const Home = async () => {
             <div class="pokemon__card pokemon__card--type-${
               pokemon.types[0].type.name
             }">
-							<a href = "#/${pokemon.id}">
-
-								<p class="pokemon__id"># ${pokemon.id.toString().padStart(3, "0")}</p>
-								<div class="pokemon__img-container">
-									<img  src="${pokemon.sprites.front_default}" alt="">
-								</div>
-								<h3 class="pokemon___name">${pokemon.name}</h3>
-								<div class = "pokemon__types-container">
+						<p class="pokemon__id"># ${pokemon.id.toString().padStart(3, "0")}</p>
+						<div class="pokemon__img-container">
+						<a href = "#/${pokemon.id}">
+							<img  src="${pokemon.sprites.front_default}" alt="">
+						</a>
+						</div>
+						<h3 class="pokemon___name">${pokemon.name}</h3>
+						<div class = "pokemon__types-container">
 									<span class = "pokemon__type--${pokemon.types[0].type.name} ">${
               pokemon.types[0].type.name
             }</span>
@@ -49,7 +49,6 @@ const Home = async () => {
                       : ""
                   }
 								</div>
-							</a>
             </div>    
         `,
           )

@@ -16,20 +16,24 @@ const Pokemon = async () => {
   }">
               </div>
               <article class="pokemon__info">
-                <h3 >ID: </h3> <p>${pokemon.id}</p>
+                <h3 >ID: </h3> <p>#${pokemon.id.toString().padStart(3, "0")}</p>
                 <h3>Height: </h3> <p>${pokemon.height}</p>
                 <h3>Weight: </h3> <p>${pokemon.weight}</p>
                 <h3>Abilities: </h3> <p>${pokemon.abilities[0].ability.name}</p>
                 <h3>Abilities: </h3> <p>${pokemon.abilities.map(
                   (ability) => `<span> ${ability.ability.name}</span>`,
                 )}</p>
-                <h3>Moves: </h3> <p>${pokemon.moves.map(
-                  (move) => ` ${move.move.name}`,
-                )}</p>
+                <h3>Moves: </h3> <article class = "pokemon__inner-types">
+                <span class = "pokemon__type--${pokemon.types[0].type.name} ">${
+    pokemon.types[0].type.name
+  }</span>
+                ${
+                  pokemon.types[1]
+                    ? `<span class = "pokemon__type--${pokemon.types[1].type.name}">${pokemon.types[1].type.name}</span>`
+                    : ""
+                }
+                </article>
               </article>                
-            </article>
-            <article class="Pokemon-card">
-               
             </article>
         </div>
     `;
